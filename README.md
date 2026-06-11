@@ -142,10 +142,10 @@ Tujuan dari aplikasi BalamSafe adalah memberikan informasi peringatan dini banji
 
 Project ini dibuat untuk memenuhi tugas mata kuliah **Pemrograman Mobile**.
 
-**Nama Aplikasi:** BalamSafe
-**Topik:** Aplikasi Peringatan Dini Banjir Bandar Lampung
-**Platform:** Mobile App
-**Framework:** Flutter
+* **Nama Aplikasi:** BalamSafe
+* **Topik:** Aplikasi Peringatan Dini Banjir Bandar Lampung
+* **Platform:** Mobile App
+* **Framework:** Flutter
 
 ---
 
