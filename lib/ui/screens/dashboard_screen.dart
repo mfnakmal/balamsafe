@@ -56,6 +56,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       orElse: () => _data.first,
     );
   }
+  
 
   @override
   void initState() {
@@ -163,7 +164,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
   Widget _buildHeader() {
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.fromLTRB(18, 12, 18, 22),
+      padding: const EdgeInsets.fromLTRB(18, 10, 18, 28),
       decoration: const BoxDecoration(
         gradient: LinearGradient(
           colors: [Color(0xFF1565D8), Color(0xFF42A5F5)],
@@ -212,7 +213,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     ),
                   ],
                 ),
-                const SizedBox(height: 18),
+                const SizedBox(height: 14),
                 const Text(
                   "Peringatan Dini Banjir",
                   style: TextStyle(
@@ -242,7 +243,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     return Container(
       margin: const EdgeInsets.fromLTRB(_sidePadding, 12, _sidePadding, 0),
       padding: const EdgeInsets.symmetric(horizontal: 14),
-      height: 50,
+      height: 46,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(17),
@@ -298,7 +299,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     final point = LatLng(data.latitude, data.longitude);
 
     return Container(
-      height: 165,
+      height: 145,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(18),
         boxShadow: [
@@ -451,21 +452,21 @@ class _DashboardScreenState extends State<DashboardScreen> {
             children: [
               _buildHeader(),
               _buildDistrictSelector(),
-              const SizedBox(height: 12),
+              const SizedBox(height: 10),
 
               ModernStatusCard(
                 district: data.district,
                 rain: data.rain,
               ),
 
-              const SizedBox(height: 12),
+              const SizedBox(height: 10),
 
               RainInfoCard(
                 rain: data.rain,
                 lastUpdate: data.lastUpdate,
               ),
 
-              const SizedBox(height: 12),
+              const SizedBox(height: 10),
 
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: _sidePadding),
@@ -494,7 +495,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 ),
               ),
 
-              const SizedBox(height: 12),
+              const SizedBox(height: 10),
 
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: _sidePadding),
@@ -521,7 +522,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 child: RecommendationCard(rain: data.rain),
               ),
 
-              const SizedBox(height: 92),
+              const SizedBox(height: 110),
             ],
           ),
 

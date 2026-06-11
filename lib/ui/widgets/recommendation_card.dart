@@ -21,15 +21,15 @@ class RecommendationCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.fromLTRB(30, 30, 30, 34),
+      padding: const EdgeInsets.fromLTRB(16, 16, 16, 18),
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(32),
+        borderRadius: BorderRadius.circular(22),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.055),
-            blurRadius: 16,
-            offset: const Offset(0, 8),
+            color: Colors.black.withOpacity(0.045),
+            blurRadius: 14,
+            offset: const Offset(0, 7),
           ),
         ],
       ),
@@ -39,38 +39,43 @@ class RecommendationCard extends StatelessWidget {
           Row(
             children: [
               Container(
-                width: 58,
-                height: 58,
+                width: 44,
+                height: 44,
                 decoration: BoxDecoration(
                   color: const Color(0xFFE8F5E9),
-                  borderRadius: BorderRadius.circular(17),
+                  borderRadius: BorderRadius.circular(14),
                 ),
                 child: const Icon(
                   Icons.tips_and_updates,
                   color: Color(0xFF2E7D32),
-                  size: 30,
+                  size: 23,
                 ),
               ),
-              const SizedBox(width: 20),
+
+              const SizedBox(width: 12),
+
               const Expanded(
                 child: Text(
                   "Rekomendasi Tindakan",
                   style: TextStyle(
                     color: Color(0xFF171B26),
-                    fontSize: 24,
+                    fontSize: 17,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ),
             ],
           ),
-          const SizedBox(height: 28),
+
+          const SizedBox(height: 13),
+
           Text(
             recommendation,
             style: const TextStyle(
               color: Color(0xFF5F6573),
-              fontSize: 18,
-              height: 1.55,
+              fontSize: 13.5,
+              height: 1.45,
+              fontWeight: FontWeight.w500,
             ),
           ),
         ],
